@@ -373,11 +373,14 @@ body.lab-m { --accent: var(--orange); }
   .topic.flip .topic-text { order: 0; }
   .contact-grid { grid-template-columns: 1fr; }
 }
-@media (max-width: 860px) {
+/* Collapse the main menu earlier so the three header logos and the menu never collide */
+@media (max-width: 1100px) {
   .menu-btn { display: block; }
   .nav { display: none; position: absolute; top: 76px; left: 0; right: 0; flex-direction: column; background: var(--white); border-bottom: 1px solid var(--line); padding: 10px 20px 18px; }
   .nav.open { display: flex; }
   .nav a { padding: 12px 14px; }
+}
+@media (max-width: 860px) {
   .lab-grid { grid-template-columns: 1fr; }
   .featured { grid-template-columns: auto 1fr; }
   .featured .btn { grid-column: 1 / -1; justify-self: start; }
