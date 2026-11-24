@@ -50,6 +50,7 @@ p { margin: 0; }
 .brand img.um { height: 34px; width: auto; }
 .brand .divider { width: 1px; height: 34px; background: var(--line); }
 .brand img.pm { height: 38px; width: auto; }
+.brand img.onco { height: 44px; width: auto; }
 .nav { margin-left: auto; display: flex; gap: 4px; }
 .nav a {
   text-decoration: none; font-weight: 600; font-size: 15px; color: var(--muted);
@@ -388,6 +389,7 @@ body.lab-m { --accent: var(--orange); }
   body { font-size: 16px; }
   .wrap { width: calc(100% - 32px); }
   .brand .divider, .brand img.um { display: none; }
+  .brand img.onco { height: 34px; }
   .section { padding: 64px 0; }
   .news-grid { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(3, 1fr); }
