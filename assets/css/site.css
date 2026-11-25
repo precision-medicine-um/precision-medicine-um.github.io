@@ -365,6 +365,15 @@ body.lab-m { --accent: var(--orange); }
 .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
 
+/* ---------- Oncometabolism theme (home) ---------- */
+.omg { background: var(--white); }
+.omg-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: center; }
+.omg-grid h2 { font-size: clamp(28px, 3vw, 40px); margin: 8px 0 18px; }
+.omg-grid p { color: var(--muted); font-size: 17px; margin: 0 0 14px; }
+.omg-card { background: var(--paper); border: 1px solid var(--line); border-radius: 28px; padding: 44px 36px; box-shadow: var(--shadow); display: grid; place-items: center; }
+.omg-card img { width: 100%; max-width: 360px; height: auto; }
+@media (max-width: 860px) { .omg-grid { grid-template-columns: 1fr; gap: 28px; } .omg-card { padding: 28px; } }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1020px) {
   .hero .wrap { grid-template-columns: 1fr; padding: 64px 0; }
