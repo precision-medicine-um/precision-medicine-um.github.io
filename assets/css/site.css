@@ -370,6 +370,16 @@ body.lab-m { --accent: var(--orange); }
 .omg-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: center; }
 .omg-grid h2 { font-size: clamp(28px, 3vw, 40px); margin: 8px 0 18px; }
 .omg-grid p { color: var(--muted); font-size: 17px; margin: 0 0 14px; }
+.omg-grid .omg-lead { color: var(--ink); font-size: 19px; margin-bottom: 10px; }
+.omg-more summary { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; list-style: none; font-weight: 600; font-size: 15px; color: var(--navy); border-bottom: 2px solid var(--amber); padding-bottom: 2px; }
+.omg-more summary::-webkit-details-marker { display: none; }
+.omg-more summary:hover { color: var(--orange); }
+.omg-more .less { display: none; }
+.omg-more[open] .more { display: none; }
+.omg-more[open] .less { display: inline; }
+.omg-more .chev { transition: transform .2s; display: inline-block; }
+.omg-more[open] .chev { transform: rotate(180deg); }
+.omg-more[open] summary { margin-bottom: 16px; }
 .omg-card { background: var(--paper); border: 1px solid var(--line); border-radius: 28px; padding: 44px 36px; box-shadow: var(--shadow); display: grid; place-items: center; }
 .omg-card img { width: 100%; max-width: 360px; height: auto; }
 @media (max-width: 860px) { .omg-grid { grid-template-columns: 1fr; gap: 28px; } .omg-card { padding: 28px; } }
