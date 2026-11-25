@@ -365,9 +365,9 @@ body.lab-m { --accent: var(--orange); }
 .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
 
-/* Highlighted organisation links in the home intro */
-.lead a.org-link { color: var(--navy); font-weight: 600; text-decoration: none; background: linear-gradient(transparent 62%, rgba(243,146,0,.28) 62%); border-bottom: 2px solid var(--amber); transition: color .15s, background .15s; }
-.lead a.org-link:hover, .lead a.org-link:focus-visible { color: var(--orange); background: linear-gradient(transparent 62%, rgba(243,146,0,.45) 62%); }
+/* Organisation links in the home intro: plain blue hyperlinks */
+.lead a.org-link { color: #0b57d0; text-decoration: underline; text-underline-offset: 2px; }
+.lead a.org-link:hover, .lead a.org-link:focus-visible { color: #0842a0; }
 /* ---------- Oncometabolism theme (home) ---------- */
 .omg { background: var(--white); }
 .omg-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: center; }
